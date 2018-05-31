@@ -82,6 +82,10 @@
 }
 
 - (void)yy_showUserGuideWithNib:(NSString*)nibName {
+    if ([self yy_hasShowedGuideNib:nibName]) {
+        return;
+    }
+    
     NSArray* arr = [[UINib nibWithNibName:nibName bundle:[NSBundle mainBundle]] instantiateWithOwner:self options:nil];
     if (!arr || arr.count == 0) {
         return;
