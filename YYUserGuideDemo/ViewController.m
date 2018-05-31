@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+YYUserGuide.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickShowGuide:(id)sender {
+    [self yy_showUserGuideWithNib:@"Guide"];
+}
 
 @end

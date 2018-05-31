@@ -15,6 +15,8 @@
 		8C10CE6A20BFE67000F54B6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C10CE6920BFE67000F54B6F /* main.m */; };
 		8C10CE7420BFE67000F54B6F /* YYUserGuideDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C10CE7320BFE67000F54B6F /* YYUserGuideDemoTests.m */; };
 		8C10CE7F20BFE67000F54B6F /* YYUserGuideDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C10CE7E20BFE67000F54B6F /* YYUserGuideDemoUITests.m */; };
+		8C10CE9020BFE9EB00F54B6F /* UIViewController+YYUserGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C10CE8F20BFE9EB00F54B6F /* UIViewController+YYUserGuide.m */; };
+		8C10CE9520BFEA5400F54B6F /* Guide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C10CE9420BFEA5400F54B6F /* Guide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		8C10CE7A20BFE67000F54B6F /* YYUserGuideDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYUserGuideDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C10CE7E20BFE67000F54B6F /* YYUserGuideDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYUserGuideDemoUITests.m; sourceTree = "<group>"; };
 		8C10CE8020BFE67000F54B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C10CE8E20BFE9EB00F54B6F /* UIViewController+YYUserGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YYUserGuide.h"; sourceTree = "<group>"; };
+		8C10CE8F20BFE9EB00F54B6F /* UIViewController+YYUserGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YYUserGuide.m"; sourceTree = "<group>"; };
+		8C10CE9420BFEA5400F54B6F /* Guide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Guide.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		8C10CE4E20BFE66F00F54B6F = {
 			isa = PBXGroup;
 			children = (
+				8C10CE8C20BFE68900F54B6F /* YYUserGuide */,
 				8C10CE5920BFE67000F54B6F /* YYUserGuideDemo */,
 				8C10CE7220BFE67000F54B6F /* YYUserGuideDemoTests */,
 				8C10CE7D20BFE67000F54B6F /* YYUserGuideDemoUITests */,
@@ -101,6 +107,7 @@
 		8C10CE5920BFE67000F54B6F /* YYUserGuideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8C10CE8D20BFE72600F54B6F /* Guides */,
 				8C10CE5A20BFE67000F54B6F /* AppDelegate.h */,
 				8C10CE5B20BFE67000F54B6F /* AppDelegate.m */,
 				8C10CE5D20BFE67000F54B6F /* ViewController.h */,
@@ -130,6 +137,23 @@
 				8C10CE8020BFE67000F54B6F /* Info.plist */,
 			);
 			path = YYUserGuideDemoUITests;
+			sourceTree = "<group>";
+		};
+		8C10CE8C20BFE68900F54B6F /* YYUserGuide */ = {
+			isa = PBXGroup;
+			children = (
+				8C10CE8E20BFE9EB00F54B6F /* UIViewController+YYUserGuide.h */,
+				8C10CE8F20BFE9EB00F54B6F /* UIViewController+YYUserGuide.m */,
+			);
+			path = YYUserGuide;
+			sourceTree = "<group>";
+		};
+		8C10CE8D20BFE72600F54B6F /* Guides */ = {
+			isa = PBXGroup;
+			children = (
+				8C10CE9420BFEA5400F54B6F /* Guide.xib */,
+			);
+			path = Guides;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C10CE9520BFEA5400F54B6F /* Guide.xib in Resources */,
 				8C10CE6720BFE67000F54B6F /* LaunchScreen.storyboard in Resources */,
 				8C10CE6420BFE67000F54B6F /* Assets.xcassets in Resources */,
 				8C10CE6220BFE67000F54B6F /* Main.storyboard in Resources */,
@@ -265,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C10CE9020BFE9EB00F54B6F /* UIViewController+YYUserGuide.m in Sources */,
 				8C10CE5F20BFE67000F54B6F /* ViewController.m in Sources */,
 				8C10CE6A20BFE67000F54B6F /* main.m in Sources */,
 				8C10CE5C20BFE67000F54B6F /* AppDelegate.m in Sources */,
